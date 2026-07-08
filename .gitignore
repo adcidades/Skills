@@ -3,7 +3,9 @@ node_modules/
 
 # Skill install artifacts (npx skills add)
 .agents/
-.claude/
+.claude/*
+# ...but keep the installed skills so they load in Claude Code on the web
+!.claude/skills/
 skills-lock.json
 
 # Environment variables / secrets
